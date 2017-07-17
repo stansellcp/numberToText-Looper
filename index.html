@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body background="blue_triangles.png">
+    <h2><center><div><script type="text/javascript">
+      for (i = 0; i <= 100; i++)
+      {
+        var x;
+
+        if (i == 0)
+        {
+          x = i;
+        }
+
+        else if ((i % 3 == 0) && (i % 5 == 0))
+        {
+          x = 'Bing Bong';
+        }
+
+        else if (i % 3 == 0)
+        {
+          x = 'Bing';
+        }
+
+        else if (i % 5 == 0)
+        {
+          x = 'Bong';
+        }
+
+        else
+        {
+          x = i;
+        };
+
+        document.write('<p>' + i + ': ' + x + ',' + '</p>');
+      }
+    </script></div></center></h2>
+  </body>
+</html>
